@@ -1,16 +1,14 @@
-# startup
+# Startup Namer - Gerador de Nomes para Startups
 
-A new Flutter project.
+Um projeto em Flutter para gerar ideias de nomes para startups.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Faça Contato 🛸
 
-A few resources to get you started if this is your first Flutter project:
+João Paulo Zorek
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Pelo LinkedIn: [João Paulo Zorek](https://www.linkedin.com/in/joaopaulozorek/)
+Pelo Instagram: [@joaopaulozorek](https://instagram.com/joaopaulozorek)
+Ou por e-mail: joaopaulozorek@gmail.com
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Espero seu Olá! 👽
