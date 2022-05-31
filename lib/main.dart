@@ -1,6 +1,5 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:translator/translator.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -30,7 +29,6 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordsState extends State<RandomWords> {
-  final translator = GoogleTranslator();
   final _suggestions = <WordPair>[];
   final _saved = <WordPair>{};
   final _biggerFont = const TextStyle(fontSize: 18);
@@ -89,21 +87,11 @@ class _RandomWordsState extends State<RandomWords> {
             _suggestions.addAll(generateWordPairs().take(10));
           }
 
-          Future<String> _translate(WordPair wordPair) async {
-            var translate = await translator.translate(
-                "${wordPair.second}  ${wordPair.first}",
-                from: 'en',
-                to: 'pt');
-            print(translate);
-            return "$translate";
-          }
-
           final alreadySaved = _saved.contains(_suggestions[index]);
 
-          final translateWordPair = _translate(_suggestions[index]);
           return ListTile(
             title: Text(
-              "${_suggestions[index].asPascalCase} / $translateWordPair",
+              _suggestions[index].asPascalCase,
               style: _biggerFont,
             ),
             trailing: Icon(
